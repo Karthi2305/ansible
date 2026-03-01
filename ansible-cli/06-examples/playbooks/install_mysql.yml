@@ -1,0 +1,23 @@
+- name: Install and configure MySQL on database servers
+  hosts: db
+  become: true
+
+  vars_files:
+    - ../group_vars/db/secrets.yml
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install MySQL Server
+      apt:
+        name: mysql-server
+        state: present
+
+    - name: Ensure MySQL service is running
+      service:
+        name: mysql
+        state: started
+        enabled: true
+
