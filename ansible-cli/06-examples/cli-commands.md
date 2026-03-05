@@ -18,7 +18,8 @@ Checks connectivity between the controller and all managed hosts.
 **Real-world use case**
 
 Used to validate that all servers are reachable before a production deployment.
-⚠️ This is not a network ping; it verifies Ansible connectivity.
+
+This is not a network ping; it verifies Ansible connectivity.
 
 ---
 
