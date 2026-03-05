@@ -40,6 +40,7 @@ ansible <group> -m shell -a "<command>"
 Runs a shell command on target hosts.
 
 **When to use**
+
 - For quick troubleshooting
 - For commands without a native module
 
@@ -54,6 +55,7 @@ ansible <group> -m command -a "<command>"
 Executes a command without shell interpretation.
 
 **When to use**
+
 - Running safe, predictable commands
 - Avoiding shell-related risks
 
@@ -69,6 +71,7 @@ ansible-playbook playbook.yml
 Executes an Ansible playbook.
 
 **When to use**
+
 - Running automation workflows
 - Applying configuration changes
 
@@ -82,6 +85,7 @@ ansible-playbook -i inventories/hosts.ini playbook.yml
 Runs a playbook with a specific inventory file.
 
 **When to use**
+
 - Managing multiple environments
 - Using custom inventories
 
@@ -105,6 +109,7 @@ ansible-playbook playbook.yml --diff
 Shows configuration differences before applying changes.
 
 **When to use**
+
 - Auditing changes
 - Reviewing configuration updates
 ---
@@ -114,10 +119,12 @@ ansible-playbook playbook.yml --limit <host/group>
 Limits execution to specific hosts or groups.
 
 **When to use**
+
 - Partial deployments
 - Debugging specific hosts
 
 **Real-world use case**
+
 Deploying a fix to a single node instead of the entire cluster.
 ---
 ```bash
@@ -130,6 +137,7 @@ Creates an encrypted file for storing secrets.
 - Storing passwords, tokens, credentials
 
 **Real-world use case**
+
 Used to store database credentials securely in Git repositories.
 
 ```bash
@@ -138,6 +146,7 @@ ansible-vault edit secrets.yml
 Edits an encrypted Vault file.
 
 **When to use**
+
 - Updating secrets
 - Rotating passwords
 
@@ -162,11 +171,14 @@ Displays the resolved inventory structure.
 ansible-doc <module>
 ```
 Displays documentation for an Ansible module.
+
 **When to use**
+
 - Learning module options
 - Writing accurate playbooks
 
 **Real-world use case**
+
 Used daily while developing new automation tasks.
 ---
 ```bash
@@ -180,6 +192,7 @@ Downloads roles from Ansible Galaxy.
 - Accelerating automation development
 
 **Real-world use case**
+
 Using a hardened NGINX role instead of writing from scratch.
 ---
 ```bash
@@ -188,6 +201,7 @@ ansible-lint playbook.yml
 Checks playbooks for best practices and syntax issues.
 
 **When to use**
+
 - Before committing code
 - In CI pipelines
 
