@@ -287,17 +287,6 @@ Refer to [`05-setup/winrm-setup.md`](ansible-cli/05-setup/winrm-setup.md) for th
 
 ---
 
-## 🔮 Roadmap / Next Steps
-
-- [ ] Add **Handlers** (restart services on config change)
-- [ ] Add **Roles** using `ansible-galaxy init`
-- [ ] Add **Jinja2 Templates** for dynamic config files
-- [ ] Integrate **AWS Dynamic Inventory**
-- [ ] Build **CI/CD pipeline** using Ansible + GitHub Actions
-- [ ] Add **Molecule** for role testing
-
----
-
 ## 📚 Learning Resources
 
 - 📖 [Official Ansible Docs](https://docs.ansible.com/)
